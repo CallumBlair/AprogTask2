@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task_01">
         <activity
+            android:name=".DisplayMessageActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
